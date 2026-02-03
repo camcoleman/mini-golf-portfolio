@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Golf Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header class="hero">
+        <div class="hero-text">
+          <p class="eyebrow">Mini Golf Portfolio</p>
+          <h1>Put your way into my work.</h1>
+          <p class="subhead">
+            Click and drag from the ball to aim, release to putt. Sink a ball into each
+            hole to unlock Resume, Examples, and Publications.
+          </p>
+        </div>
+        <div class="legend">
+          <div class="legend-item">
+            <span class="legend-dot resume"></span>
+            <span>Resume</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot examples"></span>
+            <span>Examples</span>
+          </div>
+          <div class="legend-item">
+            <span class="legend-dot pubs"></span>
+            <span>Publications</span>
+          </div>
+        </div>
+      </header>
+
+      <main class="course-wrapper">
+        <div id="course" aria-label="Mini golf course" role="application">
+          <div id="ball" aria-label="Golf ball"></div>
+
+          <div class="hole" id="hole-resume" data-panel="resume" aria-label="Resume hole">
+            <span>Resume</span>
+          </div>
+          <div
+            class="hole"
+            id="hole-examples"
+            data-panel="examples"
+            aria-label="Examples hole"
+          >
+            <span>Examples</span>
+          </div>
+          <div
+            class="hole"
+            id="hole-publications"
+            data-panel="publications"
+            aria-label="Publications hole"
+          >
+            <span>Publications</span>
+          </div>
+
+          <div class="ramp ramp-1" data-type="rect"></div>
+          <div class="ramp ramp-2" data-type="rect"></div>
+          <div class="ramp ramp-3" data-type="rect"></div>
+          <div class="obstacle bumper" data-type="circle"></div>
+          <div class="obstacle bumper bumper-2" data-type="circle"></div>
+          <div class="obstacle bumper bumper-3" data-type="circle"></div>
+          <div class="obstacle windmill" data-type="rect">
+            <div class="windmill-arm"></div>
+            <div class="windmill-arm"></div>
+          </div>
+          <div class="sand sand-1" data-type="sand"></div>
+          <div class="sand sand-2" data-type="sand"></div>
+          <div class="wall wall-1" data-type="rect"></div>
+          <div class="wall wall-2" data-type="rect"></div>
+          <div class="wall wall-3" data-type="rect"></div>
+          <div class="wall wall-4" data-type="rect"></div>
+          <div class="wall wall-5" data-type="rect"></div>
+
+          <svg id="aim" aria-hidden="true">
+            <line id="aim-line" x1="0" y1="0" x2="0" y2="0" />
+            <polygon id="aim-head" points="0,0 0,0 0,0" />
+          </svg>
+        </div>
+      </main>
+
+      <section class="clubhouse">
+        <article class="club-card locked" data-panel="resume">
+          <h2>Resume</h2>
+          <p>Sink the ball to open your resume page.</p>
+          <a href="resume.html">Open Resume</a>
+        </article>
+        <article class="club-card locked" data-panel="examples">
+          <h2>Examples</h2>
+          <p>Sink the ball to open your examples page.</p>
+          <a href="examples.html">Open Examples</a>
+        </article>
+        <article class="club-card locked" data-panel="publications">
+          <h2>Publications</h2>
+          <p>Sink the ball to open your publications page.</p>
+          <a href="publications.html">Open Publications</a>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <p>Want more holes or obstacles? I can add ramps, windmills, and portals.</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
