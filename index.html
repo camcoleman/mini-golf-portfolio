@@ -17,62 +17,16 @@
       <header class="hero">
         <div class="hero-text">
           <p class="eyebrow">Mini Golf Portfolio</p>
-          <h1>Put your way into my work.</h1>
-          <p class="subhead">
-            Click and drag from the ball to aim, release to putt. Sink a ball into each
-            hole to unlock Resume, Examples, and Publications.
-          </p>
-        </div>
-        <div class="legend">
-          <div class="legend-item">
-            <span class="legend-dot resume"></span>
-            <span>Resume</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-dot examples"></span>
-            <span>Examples</span>
-          </div>
-          <div class="legend-item">
-            <span class="legend-dot pubs"></span>
-            <span>Publications</span>
-          </div>
+          <h1>Three holes. Three pages.</h1>
+          <p class="subhead">Drag from a ball to aim. Release to putt.</p>
         </div>
       </header>
 
-      <main class="course-wrapper">
-        <div id="course" aria-label="Mini golf course" role="application">
-          <div id="ball" aria-label="Golf ball"></div>
-
-          <div class="hole" id="hole-resume" data-panel="resume" aria-label="Resume hole">
-            <span>Resume</span>
-          </div>
-          <div
-            class="hole"
-            id="hole-examples"
-            data-panel="examples"
-            aria-label="Examples hole"
-          >
-            <span>Examples</span>
-          </div>
-          <div
-            class="hole"
-            id="hole-publications"
-            data-panel="publications"
-            aria-label="Publications hole"
-          >
-            <span>Publications</span>
-          </div>
-
-          <div class="ramp ramp-1" data-type="rect"></div>
-          <div class="ramp ramp-2" data-type="rect"></div>
-          <div class="ramp ramp-3" data-type="rect"></div>
-          <div class="obstacle bumper" data-type="circle"></div>
-          <div class="obstacle bumper bumper-2" data-type="circle"></div>
-          <div class="obstacle bumper bumper-3" data-type="circle"></div>
-          <div class="obstacle windmill" data-type="rect">
-            <div class="windmill-arm"></div>
-            <div class="windmill-arm"></div>
-          </div>
+      <section class="holes-row">
+        <div class="course" data-target="resume.html" aria-label="Resume hole" role="application">
+          <div class="course-title">Resume</div>
+          <div class="hole" data-hole style="left: 75%; top: 22%;">Resume</div>
+          <div class="ball" data-ball style="left: 20%; top: 78%;"></div>
           <div class="sand sand-1" data-type="sand"></div>
           <div class="sand sand-2" data-type="sand"></div>
           <div class="wall wall-1" data-type="rect"></div>
@@ -80,34 +34,49 @@
           <div class="wall wall-3" data-type="rect"></div>
           <div class="wall wall-4" data-type="rect"></div>
           <div class="wall wall-5" data-type="rect"></div>
-
-          <svg id="aim" aria-hidden="true">
-            <line id="aim-line" x1="0" y1="0" x2="0" y2="0" />
-            <polygon id="aim-head" points="0,0 0,0 0,0" />
+          <svg class="aim" aria-hidden="true">
+            <line class="aim-line" x1="0" y1="0" x2="0" y2="0" />
+            <polygon class="aim-head" points="0,0 0,0 0,0" />
           </svg>
         </div>
-      </main>
 
-      <section class="clubhouse">
-        <article class="club-card locked" data-panel="resume">
-          <h2>Resume</h2>
-          <p>Sink the ball to open your resume page.</p>
-          <a href="resume.html">Open Resume</a>
-        </article>
-        <article class="club-card locked" data-panel="examples">
-          <h2>Examples</h2>
-          <p>Sink the ball to open your examples page.</p>
-          <a href="examples.html">Open Examples</a>
-        </article>
-        <article class="club-card locked" data-panel="publications">
-          <h2>Publications</h2>
-          <p>Sink the ball to open your publications page.</p>
-          <a href="publications.html">Open Publications</a>
-        </article>
+        <div class="course" data-target="examples.html" aria-label="Examples hole" role="application">
+          <div class="course-title">Examples</div>
+          <div class="hole" data-hole style="left: 70%; top: 30%;">Examples</div>
+          <div class="ball" data-ball style="left: 25%; top: 75%;"></div>
+          <div class="sand sand-1" data-type="sand"></div>
+          <div class="sand sand-2" data-type="sand"></div>
+          <div class="wall wall-1" data-type="rect"></div>
+          <div class="wall wall-2" data-type="rect"></div>
+          <div class="wall wall-3" data-type="rect"></div>
+          <div class="wall wall-4" data-type="rect"></div>
+          <div class="wall wall-5" data-type="rect"></div>
+          <svg class="aim" aria-hidden="true">
+            <line class="aim-line" x1="0" y1="0" x2="0" y2="0" />
+            <polygon class="aim-head" points="0,0 0,0 0,0" />
+          </svg>
+        </div>
+
+        <div class="course" data-target="publications.html" aria-label="Publications hole" role="application">
+          <div class="course-title">Publications</div>
+          <div class="hole" data-hole style="left: 72%; top: 26%;">Pubs</div>
+          <div class="ball" data-ball style="left: 22%; top: 78%;"></div>
+          <div class="sand sand-1" data-type="sand"></div>
+          <div class="sand sand-2" data-type="sand"></div>
+          <div class="wall wall-1" data-type="rect"></div>
+          <div class="wall wall-2" data-type="rect"></div>
+          <div class="wall wall-3" data-type="rect"></div>
+          <div class="wall wall-4" data-type="rect"></div>
+          <div class="wall wall-5" data-type="rect"></div>
+          <svg class="aim" aria-hidden="true">
+            <line class="aim-line" x1="0" y1="0" x2="0" y2="0" />
+            <polygon class="aim-head" points="0,0 0,0 0,0" />
+          </svg>
+        </div>
       </section>
 
       <footer class="footer">
-        <p>Want more holes or obstacles? I can add ramps, windmills, and portals.</p>
+        <p>Sink a putt to open the page.</p>
       </footer>
     </div>
 
