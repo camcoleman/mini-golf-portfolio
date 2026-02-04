@@ -105,7 +105,7 @@ h1 {
   width: 26px;
   height: 26px;
   border-radius: 50%;
-  background: radial-gradient(circle at 30% 30%, #f7e7b3, #c9a34b);
+  background: radial-gradient(circle at 30% 30%, #ffffff, #ffffff);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
   transform: translate(-50%, -50%);
   z-index: 5;
@@ -131,7 +131,7 @@ h1 {
 .sand {
   position: absolute;
   border-radius: 24px;
-  background: radial-gradient(circle at top, #f8f5f0, #d9d0c2);
+  background: radial-gradient(circle at top, #e0bd82, #e8c286);
   border: 2px solid rgba(255, 255, 255, 0.6);
   opacity: 0.9;
   z-index: 2;
@@ -160,27 +160,6 @@ h1 {
   z-index: 3;
 }
 
-.wall-1 {
-  width: 70%;
-  height: 16px;
-  top: 16%;
-  left: 8%;
-}
-
-.wall-2 {
-  width: 16px;
-  height: 36%;
-  top: 16%;
-  left: 8%;
-}
-
-.wall-3 {
-  width: 52%;
-  height: 16px;
-  top: 55%;
-  left: 40%;
-}
-
 .wall-4 {
   width: 16px;
   height: 35%;
@@ -189,10 +168,10 @@ h1 {
 }
 
 .wall-5 {
-  width: 55%;
-  height: 16px;
-  top: 78%;
-  left: 18%;
+  width: 16px;
+  height: 35%;
+  top: 75%;
+  left: 20%;
 }
 
 .aim {
