@@ -61,19 +61,20 @@ h1 {
 
 .holes-row {
   display: grid;
-  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  grid-template-columns: repeat(3, minmax(220px, 1fr));
   gap: 20px;
+  align-items: stretch;
 }
 
 .course {
   position: relative;
-  height: 420px;
-  border-radius: 20px;
+  height: 520px;
+  border-radius: 22px;
   background:
     repeating-linear-gradient(
       90deg,
-      rgba(255, 255, 255, 0.03) 0 10px,
-      rgba(0, 0, 0, 0.05) 10px 20px
+      rgba(255, 255, 255, 0.02) 0 18px,
+      rgba(0, 0, 0, 0.04) 18px 36px
     ),
     linear-gradient(135deg, #1a4f2b, #0f2f1c);
   border: 4px solid #1c2b1f;
@@ -224,6 +225,6 @@ h1 {
   }
 
   .course {
-    height: 360px;
+    height: 460px;
   }
 }
